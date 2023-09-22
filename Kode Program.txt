@@ -1,0 +1,245 @@
+Codelab 1: "Program pertama Anda di Kotlin"
+
+//mencetak teks "Hello, world!" ke layar saat dijalankan
+fun main() {
+    println("Hello, world!")
+}
+----------------------------------------------------------------
+
+//mencetak tiga baris teks 
+fun main() {
+    println("1")
+    println("2")
+    println("3")
+}
+----------------------------------------------------------------
+
+//mencetak lima baris teks
+fun main() {
+    println("Tuesday")
+    println("Thursday")
+    println("Wednesday")
+    println("Friday")
+    println("Monday")
+}
+----------------------------------------------------------------
+
+//mencetak baris teks menggunakan println
+fun main() {
+    println("Tomorrow is rainy")
+}
+----------------------------------------------------------------
+
+//mencetak baris teks menggunakan printLinw
+fun main() {
+    printLine("There is a chance of snow")
+}
+----------------------------------------------------------------
+
+//Kode yang Anda bagikan mencoba mencetak tiga string ("Cloudy", "Partly Cloudy", dan "Windy") secara berurutan tanpa menggunakan pemisah antara pernyataan println
+fun main() {
+    println("Cloudy") println("Partly Cloudy") println("Windy")
+}
+----------------------------------------------------------------
+
+
+Codelab 2: "Membuat dan menggunakan variabel di Kotlin"
+
+//mendefinisikan sebuah variabel bernama count dengan tipe data Int yang diinisialisasi dengan nilai 2
+fun main() {
+    val count: Int = 2
+    println(count)
+}
+----------------------------------------------------------------
+
+//nilai variabel count tidak dicetak langsung ke layar
+fun main() {
+    val count: Int = 2
+    println("You have count unread messages.")
+}
+----------------------------------------------------------------
+
+//nilai variabel count dicetak langsung ke layar
+fun main() {
+    val count: Int = 2
+    println("You have $count unread messages.")
+}
+----------------------------------------------------------------
+
+//nilai variabel unreadCount dan readCount  dicetak langsung ke layar
+fun main() {
+    val unreadCount = 5
+    val readCount = 100
+    println("You have ${unreadCount + readCount} total messages in your inbox.")
+}
+----------------------------------------------------------------
+
+fun main() {
+    val numberOfPhotos = 100
+    val photosDeleted = 10
+    println("$numberOfPhotos photos")
+    println("$photosDeleted photos deleted")
+    println("${numberOfPhotos - photosDeleted} photos left")
+}
+----------------------------------------------------------------
+
+//mendefinisikan variabel cartTotal dan kemudian menginisialisasinya dengan nilai 0 dan nilai cartTotal diperbarui menjadi 20
+fun main() {
+    var cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+----------------------------------------------------------------
+
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+----------------------------------------------------------------
+
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count = count + 1
+}
+----------------------------------------------------------------
+
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count = count + 1
+    println("You have $count unread messages.")
+}
+----------------------------------------------------------------
+
+fun main() {
+    var count = 10
+    println("You have $count unread messages.")
+    count--
+    println("You have $count unread messages.")
+}
+----------------------------------------------------------------
+
+//mendefinisikan beberapa variabel bertipe data Double
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = 0.0
+    println("$totalTripLength miles left to destination")
+}
+----------------------------------------------------------------
+
+fun main() {
+    val nextMeeting = "Next meeting is:"
+    val date = "January 1"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+----------------------------------------------------------------
+
+//mendefinisikan sebuah variabel bernama notificationsEnabled dengan tipe data Boolean dan diinisialisasi dengan nilai true
+fun main() {
+    val notificationsEnabled: Boolean = true
+    println(notificationsEnabled)
+}
+----------------------------------------------------------------
+
+Codelab 3 : "Membuat dan menggunakan fungsi di Kotlin"
+
+//mencetak pesan ucapan ulang tahun
+fun main() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+----------------------------------------------------------------
+
+// fungsi utama yang akan dieksekusi pertama kali saat program dijalankan
+fun main() {
+    birthdayGreeting()
+}
+
+//fungsi yang mencetak pesan ucapan ulang tahun 
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+----------------------------------------------------------------
+
+//menggunakan dua parameter: name (nama penerima ucapan) dengan tipe data String dan age (usia penerima ucapan) dengan tipe data Int
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+----------------------------------------------------------------
+
+Codelab 4: "Soal Latihan: Dasar-Dasar Kotlin"
+
+fun main() {
+    println("New chat message from a friend'}
+}
+----------------------------------------------------------------
+
+fun main() {
+    val discountPercentage: Int = 0
+    val offer: String = ""
+    val item = "Google Chromecast"
+    discountPercentage = 20
+    offer = "Sale - Up to $discountPercentage% discount on $item! Hurry up!"
+
+    println(offer)
+}
+----------------------------------------------------------------
+
+fun main() {
+    val numberOfAdults = "20"
+    val numberOfKids = "30"
+    val total = numberOfAdults + numberOfKids
+    println("The total party size is: $total")
+}
+----------------------------------------------------------------
+
+fun main() {
+    val baseSalary = 5000
+    val bonusAmount = 1000
+    val totalSalary = "$baseSalary + $bonusAmount"
+    println("Congratulations for your bonus! You will receive a total of $totalSalary (additional bonus).")
+}
+----------------------------------------------------------------
+
+fun main() {
+    val firstNumber = 10
+    val secondNumber = 5
+
+    println("$firstNumber + $secondNumber = $result")
+}
+----------------------------------------------------------------
+
+fun main() {
+    val operatingSystem = "Chrome OS"
+    val emailId = "sample@gmail.com"
+
+    println(displayAlertMessage(operatingSystem, emailId))
+}
+
+// Define your displayAlertMessage() below this line.
+----------------------------------------------------------------
+fun main() {
+    val Steps = 4000
+    val caloriesBurned = PEDOMETERstepsTOcalories(Steps);
+    println("Walking $Steps steps burns $caloriesBurned calories")
+}
+
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
+}
